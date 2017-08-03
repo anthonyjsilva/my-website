@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+nav {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  flex-basis: 30%;
+  color: black;
+  background: dimgray;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  background: gray;
+}
