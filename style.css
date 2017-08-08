@@ -27,20 +27,32 @@ span {
   padding-bottom: 5px;
 
 }
+
+#cool {
+  /*color: #0a518c;*/
+}
+
 a:hover span{
-  border-bottom: 4px dotted lightgray;
+  border-bottom: 4px solid lightgray;
 }
 a:first-child {
-  flex-basis: 60%;
+
 
 }
 #logo {
+  flex-basis: 60%;
   text-align: left;
   font-size: 3em;
   color: #0a518c;
   text-transform: uppercase;
   font-family: 'Amatic SC', cursive;
 }
+
+#logo a:hover {
+  border-bottom: 4px solid #0a518c;
+  /*color: lightgray;*/
+}
+
 
 h1 {
   text-transform: uppercase;
