@@ -1,39 +1,40 @@
 body {
-  /*padding: 10px;*/
   text-align: center;
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(to right, #43cea2, #185a9d);
-  color: silver;
-  border-radius: 10px;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: lightgray;
 }
 
 nav {
-  background: none;
   display: flex;
   justify-content: flex-end;
   align-content: baseline;
-  border-radius: inherit;
-
+  padding: 20px;
 }
 
 a {
   border-radius: inherit;
   flex-basis: 10%;
   color: inherit;
-  /*background: rgba(0,0,0,.6);*/
-  /*text-transform: uppercase;*/
   text-decoration: none;
   padding: 10px;
   margin-left: 10px;
   text-align: center;
   align-self: center;
-  /*font-family: 'Amatic SC', cursive;*/
   font-size: 1.2em;
 }
+span {
+  padding-bottom: 5px;
 
-#logo {
+}
+a:hover span{
+  border-bottom: 4px dotted lightgray;
+}
+a:first-child {
   flex-basis: 60%;
+
+}
+#logo {
   text-align: left;
   font-size: 3em;
   color: #0a518c;
@@ -41,10 +42,18 @@ a {
   font-family: 'Amatic SC', cursive;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+}
+
 main {
   width: 800px;
-  height: 500px;
-  margin: 0 auto;
-  background: rgba(0,0,0,.6);
-  border-radius: inherit;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+
+li {
+  text-align: left;
 }
