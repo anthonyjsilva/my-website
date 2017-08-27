@@ -1,9 +1,22 @@
+html, body {
+  height: 100%;
+}
+
 body {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(to right, #43cea2, #185a9d);
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  background-repeat: no-repeat;
   color: lightgray;
+  position: relative;
 }
+
+header {
+  /*border-bottom: 4px solid #0a518c;*/
+
+}
+
+
 
 nav {
   display: flex;
@@ -23,22 +36,21 @@ a {
   align-self: center;
   font-size: 1.2em;
 }
+
 span {
   padding-bottom: 5px;
-
 }
 
 #cool {
   /*color: #0a518c;*/
 }
 
-a:hover span{
+a:hover span {
   border-bottom: 4px solid lightgray;
 }
-a:first-child {
 
+a:first-child {}
 
-}
 #logo {
   flex-basis: 60%;
   text-align: left;
@@ -54,18 +66,45 @@ a:first-child {
 }
 
 
-h1 {
-  text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
-  font-size: 3em;
-}
 
 main {
   width: 800px;
   margin: 60px auto;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tile {
+  border: 4px dotted lightgray;
+  flex-basis: 20%;
+  height: 100px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  /*background-image: url(https://github.com/anthonyjsilva/Bent-Creek-Ceramics/blob/master/screen-shots/sc1.png?raw=true);*/
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  flex-basis: 100%;
+  margin: 0;
+}
+h2 {
+  flex-basis: 100%;
 }
 
 li {
   text-align: left;
+}
+
+footer {
+  border-top: 4px dotted lightgray;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2em;
 }
