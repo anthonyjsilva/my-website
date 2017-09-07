@@ -10,37 +10,71 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Raleway" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <!-- favicon -->
   <link rel="shortcut icon" href="icon.png">
+
+  <!-- my stylesheet  -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <div id="logo">
-        <a href="index.html">anThOny sIlvA</a>
-      </div>
-      <!-- <a href="#"><span></span></a>
-      <a href="#"><span></span></a>
-      <a href="#"><span></span></a> -->
-    </nav>
+    <div id="logo">
+      <a href="index.html">anThOny sIlvA</a>
+    </div>
+    <div id="nav">
+      <a class="navlink" href="#"><span>About</span></a>
+      <a class="navlink" href="#"><span>Portfolio</span></a>
+      <a class="navlink" href="#"><span>Resume</span></a>
+    </div>
   </header>
   <main>
 
-    <h1>I <span id="cool">Love</span> To Code</h1>
-    <h2>websites, games, and other cool stuff</h2>
-    <!-- <p>follow me on ...</p> -->
+    <div id="myCarousel" class="carousel slide" >
+      <!-- Indicators -->
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
 
-    <div class="">
-      <a href="https://github.com/anthonyjsilva/" class="fa fa-github"></a>
-      <a href="https://www.linkedin.com/in/anthony-silva-023232149/" class="fa fa-linkedin-square"></a>
-      <a href="https://medium.com/@anthonyjsilva" class="fa fa-medium"></a>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <h1>I <span id="cool">Love</span> To Code</h1>
+          <h3>websites, games, and other cool stuff</h3>
+          <div class="">
+            <a href="https://github.com/anthonyjsilva/" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/anthony-silva-023232149/" class="fa fa-linkedin-square"></a>
+            <a href="https://medium.com/@anthonyjsilva" class="fa fa-medium"></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <h1>Portfolio</h1>
+          <h3>portfolio stuff here</h3>
+        </div>
+
+        <div class="item">
+          <h1>Resume</h1>
+          <h3>resume stuff here</h3>
+        </div>
+      </div>
     </div>
-
 
   </main>
   <footer>by Anthony Silva © 2017</footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
