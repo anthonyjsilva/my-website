@@ -10,5 +10,5 @@ arr.forEach((e,i) => {
   });
 
 })
-$('.carousel').carousel(1);
-$('.carousel').carousel('pause')
+// $('.carousel').carousel(1);
+// $('.carousel').carousel('pause')

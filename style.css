@@ -101,7 +101,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 40%;
+  height: 100%;
 }
 
 .tiles {
@@ -115,23 +115,29 @@ main {
   flex-grow: 1;
   height: 200px;
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   border-radius: 10px;
   background-size: cover;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.tile:hover {
+  opacity: 1;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.21);
 }
 
 .project1 {
-  background-image: url(sc1.png);
+  background-image: url('img/sc1.png');
 }
 .project3 {
-  background-image: url(sc3.png);
+  background-image: url('img/sc3.png');
 }
 .project4 {
-  background-image: url(sc4.png);
+  background-image: url('img/sc4.png');
 }
 .projectgame {
-  background-image: url(scgame.png);
+  background-image: url('img/scgame.png');
 }
 
 h1 {

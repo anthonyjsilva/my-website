@@ -1,4 +1,4 @@
-#My Personal Website
+# My Personal Website
+*Ongoing project to create and grow a personal website*
 
-
-[My Personal Site](anthonyjsilva.com)
+[![](screenshots/scNewSite.png "screenshot")](anthonyjsilva.com)
