@@ -1,5 +1,6 @@
+/* css variables */
 :root {
-  --main-bg-color: rgb(20, 20, 20);
+  --main-bg-color: linear-gradient(to bottom, rgb(20, 20, 20), rgb(20, 20, 20));
   --second-bg-color: lightgray;
   --main-color: lightgray;
   --main-highlight-color: #0aad7b;
@@ -7,14 +8,15 @@
 
 html, body {
   height: 100%;
-  /*background-color: lightgray;*/
+  background: var(--main-bg-color);
 }
 
 body {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  /*color: lightgray;*/
+  font-family: 'Raleway', sans-serif;
   margin: 0;
+  max-height: 100vh;
+  /*overflow-y: hidden;*/
 }
 
 header {
@@ -22,21 +24,21 @@ header {
   font-size: 1em;
   padding: 20px;
   line-height: normal;
-  /*padding-bottom: 160px;*/
-  min-height: 100vh;
+  margin-bottom: 20px;
+  /*height: 100vh;*/
 }
 
 #logo {
   font-size: 120px;
   color: var(--main-highlight-color);
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Quicksand';
 }
 
 #title {
   font-size: 24px;
-  color: lightgray;
-  margin-bottom: 20px;
+  color: gray;
+  margin-bottom: 30px;
 }
 
 .social-nav {
@@ -92,7 +94,7 @@ a:focus {
 }
 
 main {
-  background-color: rgb(20, 20, 20);
+  /*background-color: rgb(25, 25, 25);*/
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -120,21 +122,26 @@ section:hover {
   color: var(--main-bg-color);
 }
 
-.project {
-  color: rgb(20, 20, 20);
+.projects {
+  /*color: rgb(20, 20, 20);*/
   /*background-color: indianred;*/
-  background-color: #00FA9A;
+  /*background-color: #00FA9A;*/
+  /*flex-grow: 2;*/
+  /*display: none;*/
+  /*visibility: hidden;*/
 }
 
 .story {
+  /*flex-grow: 2;*/
   /*color: rgb(20,20,20);
   background-color: #00FA9A;
   /*background-color: MEDIUMSPRINGGREEN;*/
 }
 
 .resume {
-  color: rgb(20, 20, 20);
-  background-color: var(--main-highlight-color);
+  /*flex-grow: 0;*/
+  /*color: rgb(20, 20, 20);*/
+  /*background-color: var(--main-highlight-color);*/
   /*background-color: MEDIUMTURQUOISE;*/
 }
 
@@ -146,7 +153,7 @@ section:hover {
 
 .tile {
   flex-basis: 20%;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   height: 200px;
   padding: 10px;
   margin-right: 20px;
@@ -183,6 +190,7 @@ h1 {
   font-size: 4em;
   flex-basis: 100%;
   margin: 0;
+  color: gray;
 }
 
 h2 {
