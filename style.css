@@ -8,24 +8,26 @@
 
 html, body {
   height: 100%;
-  background: var(--main-bg-color);
 }
 
 body {
+  background: var(--main-bg-color);
+  position: relative;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  max-height: 100vh;
+  height: 1500px;
+  /*max-height: 100vh;*/
   /*overflow-y: hidden;*/
 }
 
 header {
-  background-color: var(--main-bg-color);
+  background-color: rgb(20, 20, 20);
   font-size: 1em;
   padding: 20px;
   line-height: normal;
   margin-bottom: 20px;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 #logo {
@@ -200,11 +202,17 @@ h2 {
 }
 
 footer {
-  /*height: 100px;
+  font-family: 'Quicksand';
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 200px;
   width: 100%;
   padding: 10px 0;
   position: absolute;
   bottom: 0;
-  font-size: 1.2em;
-  color: lightgray;*/
+  font-size: 2em;
+  color: var(--main-highlight-color);
 }
