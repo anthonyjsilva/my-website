@@ -13,7 +13,7 @@
 - [ ] add CSS transform effects
 - [ ] add CSS animations
 
-### Old Version
+### Older Versions
 ![project image](img/scOldSite.png "screenshot")
 
 
