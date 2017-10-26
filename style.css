@@ -77,12 +77,17 @@ p {
   /*font-size: 5rem;*/
 
 }
+
 .call-to-action {
   text-transform: uppercase;
   font-size: 6rem;
   /*color: gray;*/
   font-family: 'Quicksand';
 
+}
+
+.color-link {
+  color: var(--main-highlight-color);
 }
 
 a {
@@ -240,5 +245,9 @@ footer {
   position: absolute;
   bottom: 0;
   font-size: 2em;
+}
+
+.signature {
   color: var(--main-highlight-color);
+
 }
