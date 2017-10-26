@@ -1,5 +1,6 @@
-# My Personal Website
->*Ongoing personal website project to showcase myself as a web developer*
+# Portfolio
+[![project image](img/scNewSite.png "screenshot")](http://anthonyjsilva.com)
+>*Personal website project to showcase myself as a web developer*
 
 ## Technologies Used
 - Javascript
@@ -7,11 +8,15 @@
 - Bootstrap
 - CSS
 
-### Current Version
-[![project image](img/scNewSite.png "screenshot")](http://anthonyjsilva.com)
+## ToDo
+- [ ] add Bootstrap tooltips
+- [ ] add CSS transform effects
+- [ ] add CSS animations
 
-### Old Version
+### Older Versions
 ![project image](img/scOldSite.png "screenshot")
+
+
 
 ### Design sketches
 <!-- <img src="nb1.jpg" width="250" title="HTML sketch"> -->

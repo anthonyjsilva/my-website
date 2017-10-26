@@ -1,5 +1,6 @@
+/* css variables */
 :root {
-  --main-bg-color: rgb(20, 20, 20);
+  --main-bg-color: linear-gradient(to bottom, rgb(20, 20, 20), rgb(20, 20, 20));
   --second-bg-color: lightgray;
   --main-color: lightgray;
   --main-highlight-color: #0aad7b;
@@ -7,22 +8,25 @@
 
 html, body {
   height: 100%;
-  /*background-color: lightgray;*/
 }
 
 body {
+  background: var(--main-bg-color);
+  position: relative;
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  /*color: lightgray;*/
+  font-family: 'Raleway', sans-serif;
   margin: 0;
+  height: 1400px;
+  /*max-height: 100vh;*/
+  /*overflow-y: hidden;*/
 }
 
 header {
-  background-color: var(--main-bg-color);
+  background-color: rgb(20, 20, 20);
   font-size: 1em;
   padding: 20px;
   line-height: normal;
-  /*padding-bottom: 160px;*/
+  margin-bottom: 20px;
   min-height: 100vh;
 }
 
@@ -30,30 +34,55 @@ header {
   font-size: 120px;
   color: var(--main-highlight-color);
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Quicksand';
 }
 
 #title {
   font-size: 24px;
-  color: lightgray;
-  margin-bottom: 20px;
+  color: gray;
+  margin-bottom: 30px;
 }
 
 .social-nav {
   display: flex;
   justify-content: center;
+  color: gray;
 }
 
 p {
   font-size: 1.4em;
-  padding-top: 60px;
+  padding: 60px 20px;
   font-family: 'Raleway';
 }
 
 .centerpiece {
-  font-size: 1.6em;
-  width: 800px;
+  font-size: 2.6rem;
+  width: 1000px;
   margin: 0 auto;
+  margin-top: 40px;
+}
+
+.question {
+  text-transform: uppercase;
+  font-size: 5rem;
+  /*color: gray;*/
+  font-family: 'Quicksand';
+
+
+}
+.statement {
+  width: 80%;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  /*font-size: 5rem;*/
+
+}
+.call-to-action {
+  text-transform: uppercase;
+  font-size: 6rem;
+  /*color: gray;*/
+  font-family: 'Quicksand';
+
 }
 
 a {
@@ -92,7 +121,7 @@ a:focus {
 }
 
 main {
-  background-color: rgb(20, 20, 20);
+  /*background-color: rgb(25, 25, 25);*/
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +129,7 @@ main {
 }
 
 section {
-  border-top: 10px solid var(--main-bg-color);
+  border-top: 10px solid rgb(20, 20, 20);
   border-right: : 1px solid black;
   height: 100%;
   flex-basis: 33%;
@@ -111,7 +140,8 @@ section {
 }
 
 section:hover {
-  border-top: 10px solid var(--main-highlight-color);
+  /*border-top: 10px solid var(--main-highlight-color);*/
+  color: var(--main-highlight-color);
 
 }
 
@@ -120,21 +150,26 @@ section:hover {
   color: var(--main-bg-color);
 }
 
-.project {
-  color: rgb(20, 20, 20);
+.projects {
+  /*color: rgb(20, 20, 20);*/
   /*background-color: indianred;*/
-  background-color: #00FA9A;
+  /*background-color: #00FA9A;*/
+  /*flex-grow: 2;*/
+  /*display: none;*/
+  /*visibility: hidden;*/
 }
 
 .story {
+  /*flex-grow: 2;*/
   /*color: rgb(20,20,20);
   background-color: #00FA9A;
   /*background-color: MEDIUMSPRINGGREEN;*/
 }
 
 .resume {
-  color: rgb(20, 20, 20);
-  background-color: var(--main-highlight-color);
+  /*flex-grow: 0;*/
+  /*color: rgb(20, 20, 20);*/
+  /*background-color: var(--main-highlight-color);*/
   /*background-color: MEDIUMTURQUOISE;*/
 }
 
@@ -146,7 +181,7 @@ section:hover {
 
 .tile {
   flex-basis: 20%;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   height: 200px;
   padding: 10px;
   margin-right: 20px;
@@ -183,6 +218,7 @@ h1 {
   font-size: 4em;
   flex-basis: 100%;
   margin: 0;
+  /*color: gray;*/
 }
 
 h2 {
@@ -192,11 +228,17 @@ h2 {
 }
 
 footer {
-  /*height: 100px;
+  font-family: 'Quicksand';
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 200px;
   width: 100%;
   padding: 10px 0;
   position: absolute;
   bottom: 0;
-  font-size: 1.2em;
-  color: lightgray;*/
+  font-size: 2em;
+  color: var(--main-highlight-color);
 }
