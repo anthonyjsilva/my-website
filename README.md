@@ -1,18 +1,19 @@
 # Portfolio
-[![project image](img/scSiteV2.png "screenshot")](http://anthonyjsilva.com)
+[![project image](img/scNewSiteV2.png "screenshot")](http://anthonyjsilva.com)
 
 >*Personal website project to showcase myself as a web developer*
 
 ## Technologies Used
-- Javascript
 - HTML
-- Bootstrap
 - CSS
+- Bootstrap
+- Javascript
 
 ## ToDo
-- [ ] add Bootstrap tooltips
-- [ ] add CSS transform effects
-- [ ] add CSS animations
+- [ ] Bootstrap tooltips
+- [ ] CSS transform effects
+- [ ] CSS animations
+- [ ] collapsable content sections
 
 ### Older Versions
 ![project image](img/scNewSite.png "screenshot")

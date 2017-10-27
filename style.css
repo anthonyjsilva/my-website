@@ -1,28 +1,23 @@
 /* css variables */
-:root {
-  --main-bg-color: linear-gradient(to bottom, rgb(20, 20, 20), rgb(20, 20, 20));
-  --second-bg-color: lightgray;
-  --main-color: lightgray;
-  --main-highlight-color: #0aad7b;
-}
 
-html, body {
-  height: 100%;
+:root {
+  --main-color: gray;
+  --second-color: #333;
+  --highlight-color: #0aad7b;
+  --main-bg-color: rgb(20, 20, 20);
 }
 
 body {
-  background: var(--main-bg-color);
   position: relative;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
   margin: 0;
   height: 1400px;
-  /*max-height: 100vh;*/
-  /*overflow-y: hidden;*/
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  background: var(--main-bg-color);
 }
 
 header {
-  background-color: rgb(20, 20, 20);
+  background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(25, 25, 25));
   font-size: 1em;
   padding: 20px;
   line-height: normal;
@@ -32,7 +27,7 @@ header {
 
 #logo {
   font-size: 120px;
-  color: var(--main-highlight-color);
+  color: var(--highlight-color);
   text-transform: uppercase;
   font-family: 'Quicksand';
 }
@@ -52,7 +47,6 @@ header {
 p {
   font-size: 1.4em;
   padding: 60px 20px;
-  font-family: 'Raleway';
 }
 
 .centerpiece {
@@ -60,34 +54,22 @@ p {
   width: 1000px;
   margin: 0 auto;
   margin-top: 40px;
+  font-family: 'Quicksand';
 }
 
 .question {
-  text-transform: uppercase;
   font-size: 5rem;
-  /*color: gray;*/
-  font-family: 'Quicksand';
-
-
 }
+
 .statement {
   width: 80%;
   margin: 10px auto;
   margin-bottom: 30px;
-  /*font-size: 5rem;*/
-
 }
 
 .call-to-action {
   text-transform: uppercase;
   font-size: 6rem;
-  /*color: gray;*/
-  font-family: 'Quicksand';
-
-}
-
-.color-link {
-  color: var(--main-highlight-color);
 }
 
 a {
@@ -102,15 +84,11 @@ a {
 }
 
 .fa:hover {
-  color: var(--main-highlight-color);
+  color: var(--highlight-color);
 }
 
 a:hover {
   text-decoration: none;
-}
-
-a:hover span {
-  border-bottom: 4px solid #0a518c;
 }
 
 a:focus {
@@ -126,7 +104,6 @@ a:focus {
 }
 
 main {
-  /*background-color: rgb(25, 25, 25);*/
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -144,38 +121,13 @@ section {
   height: 100%;
 }
 
-section:hover {
-  /*border-top: 10px solid var(--main-highlight-color);*/
-  color: var(--main-highlight-color);
-
+section h1:hover {
+  color: var(--highlight-color);
 }
 
 .card {
   background-color: var(--second-bg-color);
   color: var(--main-bg-color);
-}
-
-.projects {
-  /*color: rgb(20, 20, 20);*/
-  /*background-color: indianred;*/
-  /*background-color: #00FA9A;*/
-  /*flex-grow: 2;*/
-  /*display: none;*/
-  /*visibility: hidden;*/
-}
-
-.story {
-  /*flex-grow: 2;*/
-  /*color: rgb(20,20,20);
-  background-color: #00FA9A;
-  /*background-color: MEDIUMSPRINGGREEN;*/
-}
-
-.resume {
-  /*flex-grow: 0;*/
-  /*color: rgb(20, 20, 20);*/
-  /*background-color: var(--main-highlight-color);*/
-  /*background-color: MEDIUMTURQUOISE;*/
 }
 
 .tiles {
@@ -186,7 +138,6 @@ section:hover {
 
 .tile {
   flex-basis: 20%;
-  /*flex-grow: 1;*/
   height: 200px;
   padding: 10px;
   margin-right: 20px;
@@ -219,11 +170,9 @@ section:hover {
 
 h1 {
   text-transform: uppercase;
-  /*font-family: 'Amatic SC', cursive;*/
   font-size: 4em;
   flex-basis: 100%;
   margin: 0;
-  /*color: gray;*/
 }
 
 h2 {
@@ -234,7 +183,6 @@ h2 {
 
 footer {
   font-family: 'Quicksand';
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +195,14 @@ footer {
   font-size: 2em;
 }
 
-.signature {
-  color: var(--main-highlight-color);
+a {
+  color: gray;
+}
 
+a:hover {
+  color: var(--highlight-color);
+}
+
+.signature {
+  color: var(--main-color);
 }
