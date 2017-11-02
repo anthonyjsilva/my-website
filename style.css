@@ -2,7 +2,6 @@
 
 :root {
   --main-color: gray;
-  --second-color: #333;
   --highlight-color: #0aad7b;
   --main-bg-color: rgb(20, 20, 20);
 }
@@ -14,10 +13,10 @@ body {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   background: var(--main-bg-color);
+  color: var(--main-color);
 }
 
 header {
-  background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(25, 25, 25));
   font-size: 1em;
   padding: 20px;
   line-height: normal;
@@ -34,14 +33,14 @@ header {
 
 #title {
   font-size: 24px;
-  color: gray;
+  color: #404040;
   margin-bottom: 30px;
 }
 
 .social-nav {
   display: flex;
   justify-content: center;
-  color: gray;
+  color: red;
 }
 
 p {
@@ -65,6 +64,7 @@ p {
   width: 80%;
   margin: 10px auto;
   margin-bottom: 30px;
+  color: #404040;
 }
 
 .call-to-action {
@@ -77,21 +77,22 @@ a {
   color: inherit;
   text-decoration: none;
   font-size: 1.2em;
+  color: #404040;
 }
 
 .fa {
   font-size: 30px;
 }
 
-.fa:hover {
-  color: var(--highlight-color);
-}
-
 a:hover {
   text-decoration: none;
+  color: var(--highlight-color);
+
 }
 
 a:focus {
+  color:lightgray;
+
   text-decoration: none;
 }
 
@@ -119,6 +120,7 @@ section {
   padding: 10px;
   font-size: 1em;
   height: 100%;
+  color: #404040;
 }
 
 section h1:hover {
@@ -190,17 +192,11 @@ footer {
   height: 200px;
   width: 100%;
   padding: 10px 0;
-  position: absolute;
-  bottom: 0;
   font-size: 2em;
 }
 
-a {
+section a {
   color: gray;
-}
-
-a:hover {
-  color: var(--highlight-color);
 }
 
 .signature {
