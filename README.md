@@ -8,8 +8,6 @@
 - Bootstrap
 - Javascript
 
-### Older Versions
+### Screenshots
 [![project image](img/scNewSiteV3.png "screenshot")](http://anthonyjsilva.com)
 [![project image](img/scNewSiteV2.png "screenshot")](http://anthonyjsilva.com)
-![project image](img/scNewSite.png "screenshot")
-![project image](img/scOldSite.png "screenshot")
