@@ -1,76 +1,50 @@
-/* css variables */
+/* CSS VARIABLES */
 :root {
-  --main-color: #9c9c9c;
-  --highlight-color: #60de9a;
-  --main-bg-color: #222222;
+  /* neon green */
+  --highlight-color: #49ef98;
+
+  /* light gray */
+  --main-color: #adadad;
+  /* --main-color: lightgray; */
+
+  /* dark gray */
+  --main-bg-color: #2e2e2e;
   --secondary-bg-color: #9c9c9c;
+}
+
+
+/* ELEMENTS */
+html {
+  color: var(--main-color);
 }
 
 body {
   position: relative;
   margin: 0;
-  height: 1400px;
-  text-align: center;
+  /* min-height: 100vh; */
+
   font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /* TODO: add a nice gradient background */
   background: var(--main-bg-color);
   color: var(--main-color);
 }
 
 header {
-  width: 60%;
-  margin: 0 auto;
-  font-size: 1rem;
-  padding: 40px;
-  line-height: normal;
-  /* margin-bottom: 20rem; */
-  border-bottom: 4px solid var(--main-color);
+  width: 50%;
+  margin: 2em auto;
+  padding: 2em 0;
+  padding-bottom: 1.5em;
+  border-bottom: 4px solid var(--highlight-color);
 }
 
-#logo {
-  font-size: 80px;
-  color: var(--highlight-color);
-  text-transform: uppercase;
-  font-family: 'Quicksand';
-}
-
-#title {
-  font-size: 24px;
-  color: var(--main-color);
-  margin-bottom: 20px;
-}
-
-.social-nav {
-  display: flex;
-  justify-content: center;
+main {
+  margin-bottom: 15rem;
+  position: relative;
 }
 
 p {
-  font-size: 1.4em;
-  padding: 60px 20px;
-}
-
-.centerpiece {
-  font-size: 2.6rem;
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 40px;
-  font-family: 'Quicksand';
-}
-
-.question {
-  font-size: 5rem;
-}
-
-.statement {
-  width: 80%;
-  margin: 10px auto;
-  margin-bottom: 30px;
-  color: #404040;
-}
-
-.call-to-action {
-  text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 1.5em;
 }
 
 a {
@@ -79,140 +53,65 @@ a {
   text-decoration: none;
   font-size: 1.2em;
 }
-
-.fa {
-  font-size: 30px;
-}
-
 a:hover {
   text-decoration: none;
   color: var(--highlight-color);
-
 }
-
 a:focus {
   color:lightgray;
-
   text-decoration: none;
 }
 
-#nav {
-  flex-basis: 100%;
-}
-
-#logo a:hover {
-  color: lightgray;
-}
-
-main {
-  margin: 0;
-  position: relative;
-  /* background: var(--secondary-bg-color); */
-}
-
-.nav {
-  width: 60%;
-  display: flex;
-  margin: 0 auto;
-
-}
-
-.nav h1 {
-  border-bottom: 10px solid var(--main-bg-color);
-  /* border-right: 1px solid black; */
-  padding: 10px;
-  /* font-size: 1em; */
-  /* color: #404040; */
-}
-.nav h1:hover {
-  cursor: pointer;
-  border-bottom: 4px solid var(--highlight-color);
-  /* border-right: 1px solid black; */
-  /* padding: 4px; */
-  /* font-size: 1em; */
-  /* color: #404040; */
-}
-
-section:hover {
-  border-top: 4px solid #404040;
-}
-
-section h1:hover {
-  color: var(--highlight-color);
-}
-
-.card {
-  background-color: var(--second-bg-color);
-  color: var(--main-bg-color);
-}
-
-.tiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.tile {
-  flex-basis: 20%;
-  height: 200px;
-  padding: 10px;
-  margin-right: 20px;
-  border-radius: 10px;
-  background-size: cover;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.tile:hover {
-  opacity: 1;
-  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.21);
-}
-
-.project1 {
-  background-image: url('img/sc1.png');
-}
-
-.project3 {
-  background-image: url('img/sc3.png');
-}
-
-.project4 {
-  background-image: url('img/sc4.png');
-}
-
-.projectgame {
-  background-image: url('img/scgame.png');
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 3em;
-  flex-basis: 100%;
-  margin: 0;
-}
-
-h2 {
-  flex-basis: 100%;
-  color: #0a518ac;
-  margin-bottom: 30px;
-}
-
 footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 4rem;
+  /* margin: 2rem; */
+
   font-family: 'Quicksand';
+  text-align: center;
+}
+
+
+/* CLASSES */
+.logo {
+  color: var(--highlight-color);
+  font-family: 'Quicksand';
+  font-size: 6.5rem;
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+.social-media {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  height: 200px;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 24px;
+  padding: 1rem;
 }
 
-section a {
-  color: gray;
+.tab-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.signature {
-  color: var(--main-color);
+.tab {
+  text-transform: uppercase;
+}
+.tab:hover {
+  text-transform: uppercase;
+  color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.call-to-action {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-style: italic;
 }
