@@ -1,12 +1,16 @@
 # My Personal Website
 
->*A place where I can showcase my side projects, post blogs, etc.*
+>*A place where I can showcase my side projects, blog posts, motivational qutoes, etc.*
 
 ## Technologies Used
 - HTML
 - CSS
+- normalize.css
 - Bootstrap
+- Google Fonts
+- Font Awesome 4.7.0 (for icons)
 - Javascript
+- jQuery
 - Surge.sh (for static hosting)
 
 ### Screenshot
