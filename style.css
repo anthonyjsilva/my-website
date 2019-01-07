@@ -124,6 +124,11 @@ footer {
   font-size: 34px;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: 'Viga', sans-serif;
+}
+
+.more-to-come {
+  font-family: 'Roboto Slab', serif;
 }
 
 .signature {
