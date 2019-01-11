@@ -1,8 +1,8 @@
 # My Personal Website
 
->*A place where I can showcase my side projects, blog posts, motivational qutoes, etc.*
+>*A place where I can showcase my side projects, blog posts, motivational snippets, etc.*
 
-## Technologies Used
+### Technologies Used
 - HTML
 - CSS
 - normalize.css
@@ -12,8 +12,10 @@
 - Javascript
 - jQuery
 - Surge.sh (for static hosting)
+- [game-icons.net](https://game-icons.net/) (for favicon and logo)
 
-### Screenshot
-[![project image](img/scNewSiteV4.png "screenshot")](http://anthonyjsilva.com)
+### Screenshots of site's progression
+[![project image](img/scNewSiteV5.png "screenshot")](http://anthonyjsilva.com)
+![project image](img/scNewSiteV4.png "screenshot")
 ![project image](img/scNewSiteV3.png "screenshot")
 ![project image](img/scNewSiteV2.png "screenshot")
