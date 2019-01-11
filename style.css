@@ -1,7 +1,7 @@
 /* CSS VARIABLES */
 :root {
   /* neon green */
-  --color-primary: #49ef98;
+  --color-primary: #ffb453;
 
   /* medium gray */
   --color-secondary: #adadad;
@@ -72,8 +72,7 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  padding: 6rem;
-  padding-bottom: 3rem;
+  padding: 4rem;
 
   background-color: var(--bg-color-primary);
   font-family: 'Viga', sans-serif;
