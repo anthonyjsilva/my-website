@@ -1,18 +1,13 @@
 /* CSS VARIABLES */
 :root {
-  /* neon green */
-  --color-primary: #ffb453;
+  --color-primary: #53FFAB;
 
-  /* medium gray */
-  --color-secondary: #adadad;
+  --color-secondary: #c5c5c5;
 
-  /* dark gray */
   --bg-color-primary: #2e2e2e;
 
-  /* light gray */
   --bg-color-secondary: lightgray;
 }
-
 
 /* TAGS */
 html {
@@ -41,16 +36,14 @@ body {
 }
 
 header {
-  padding: 60px 20px 1px 20px;
+  padding: 60px 20px 40px 20px;
   background-color: var(--bg-color-primary);
-
-  /* gradients: */
-  background: rgb(46,46,46);
-  background: linear-gradient(0deg, rgba(46,46,46,1) 0%, rgba(93,93,93,1) 100%);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main {
-  margin: 60px auto;
+  margin: 80px auto;
   max-width: 660px;
   position: relative;
 
@@ -84,8 +77,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 30px;
-
+  padding: 20px;
   background-color: var(--bg-color-primary);
   font-family: 'Viga', sans-serif;
   text-align: center;
@@ -93,8 +85,33 @@ footer {
 }
 
 /* CLASSES */
+.header-half {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.header-half2 {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  padding-left: 40px;
+}
+
+.border-right {
+  border-right: 10px solid var(--color-primary);
+}
+
 .social-icons {
   font-size: 28px;
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
 .title-icon {
@@ -102,15 +119,39 @@ footer {
 }
 
 .title {
-  margin: 0 auto;
+  margin: 0;
   font-family: 'Viga', sans-serif;
-  font-size: 64px;
+  font-size: 80px;
   text-transform: uppercase;
   color: var(--color-primary);
+  letter-spacing: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.title2 {
+  text-transform: uppercase;
+  font-family: 'Viga', sans-serif;
+  font-size: 80px;
+  color: var(--color-primary);
+  margin: 0;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.logo-icon {
+  font-size: 64px;
+  transform: translateX(-3px) translateY(4px) rotateY(180deg) rotate(90deg)
 }
 
 .sub-title {
-  margin: 0 auto;
+  margin: 0;
   font-size: 24px;
   font-family: 'Roboto Slab', serif;
   color: var(--color-secondary);
@@ -119,23 +160,24 @@ footer {
 .social-media {
   width: 480px;
   display: flex;
-  justify-content: space-between;
-  margin: 30px auto;
-  padding: 30px 4px 0px 4px;
-  border-top: 4px solid var(--color-primary);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 4px 4px 0px 4px;
+  align-items: center;
 }
 
 .quote-left {
   position: absolute;
   left: -45px;
-  color: var(--color-secondary);
+  color: var(--bg-color-primary);
   font-size: 40px;
 }
 
 .quote-right {
   position: absolute;
   right: -45px;
-  color: var(--color-secondary);
+  color: var(--bg-color-primary);
   font-size: 40px;
 }
 
@@ -161,7 +203,6 @@ footer {
 .signature {
   margin-bottom: 24px
 }
-
 
 .logo {
   filter: grayscale(100%);
