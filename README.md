@@ -1,18 +1,19 @@
 # My Personal Website
 > *A place where I can showcase my side projects, blog posts, motivational snippets, etc.*
+[Check it out!](http://anthonyjsilva.com)
 
 ### Technologies Used
 - HTML
 - CSS
 - Normalize.css
-- Bootstrap
 - Google Fonts
 - Font Awesome 4.7.0 (for icons)
-- Javascript
+- Bootstrap CSS + JS
 - jQuery
-- Surge.sh (for static hosting)
-- [game-icons.net](https://game-icons.net/) for favicon and logo
-- [glyphter.com](https://glyphter.com/) for custom icon font
+- [game-icons.net](https://game-icons.net/) (for favicon and logo)
+- [simpleicons.org](https://simpleicons.org/) (for free SVG icons of popular brands)
+- [glyphter.com](https://glyphter.com/) (for creating a custom icon font)
+- [surge.sh](https://surge.sh/) (for static hosting)
 
 ### Screenshots of site's progression
 [![project image](img/scNewSiteV7.png "screenshot")](http://anthonyjsilva.com)
