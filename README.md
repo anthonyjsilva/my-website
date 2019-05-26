@@ -4,14 +4,15 @@
 ### Technologies Used
 - HTML
 - CSS
-- normalize.css
+- Normalize.css
 - Bootstrap
 - Google Fonts
 - Font Awesome 4.7.0 (for icons)
 - Javascript
 - jQuery
 - Surge.sh (for static hosting)
-- [game-icons.net](https://game-icons.net/) (for favicon and logo)
+- [game-icons.net](https://game-icons.net/) for favicon and logo
+- [glyphter.com](https://glyphter.com/) for custom icon font
 
 ### Screenshots of site's progression
 [![project image](img/scNewSiteV7.png "screenshot")](http://anthonyjsilva.com)
