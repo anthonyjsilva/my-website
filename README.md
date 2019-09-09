@@ -19,6 +19,5 @@
 [![project image](img/scNewSiteV7.png "screenshot")](http://anthonyjsilva.com)
 ![project image](img/scNewSiteV6.png "screenshot")
 ![project image](img/scNewSiteV5.png "screenshot")
-![project image](img/scNewSiteV4.png "screenshot")
 ![project image](img/scNewSiteV3.png "screenshot")
 ![project image](img/scNewSiteV2.png "screenshot")

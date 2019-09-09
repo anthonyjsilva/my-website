@@ -27,8 +27,10 @@ body {
 }
 
 header {
-  padding: 120px 20px 20px 20px;
+  padding: 140px 20px 20px 20px;
   background-color: var(--color-primary);
+  height: 100vh;
+  position: relative;
 }
 
 main {
@@ -120,38 +122,51 @@ footer {
   color: var(--color-secondary);
 }
 
+.more {
+  position: absolute;
+  bottom: 40px;
+  left: 50vw;
+  font-size: 26px;
+}
+
+.more a {
+  text-decoration: none;
+}
+
 .content {
   position: relative;
-  max-width: 700px;
+  max-width: 600px;
   padding: 20px;
   margin: 40px auto;
 }
 
-.quote-left {
+.quote-icon {
   position: absolute;
+  font-size: 24px;
+  opacity: .4;
+}
+
+.quote-left {
   left: -45px;
-  font-size: 40px;
 }
 
 .quote-right {
-  position: absolute;
   right: -45px;
-  font-size: 40px;
 }
 
 .who-am-i {
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .bio {
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .call-to-action {
   font-family: 'Viga', sans-serif;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -159,7 +174,7 @@ footer {
 .how-i-built-this {
   text-decoration: underline;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .how-i-built-this:hover {
@@ -174,7 +189,7 @@ footer {
 .signature {
   margin-top: 10px;
   font-family: 'Roboto Slab', serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* BREAK POINTS */
