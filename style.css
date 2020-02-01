@@ -9,6 +9,7 @@
   --bg-color-secondary: lightgray;
 }
 
+
 /* TAGS */
 html {
   height: 100%;
@@ -60,6 +61,7 @@ footer {
   font-family: 'Viga', sans-serif;
   text-align: center;
 }
+
 
 /* CLASSES */
 .more-to-come {
@@ -191,6 +193,7 @@ footer {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
+
 
 /* BREAK POINTS */
 @media screen and (max-width: 1200px) {
