@@ -9,12 +9,11 @@
   --bg-color-secondary: lightgray;
 }
 
-
 /* TAGS */
 html {
   height: 100%;
   box-sizing: border-box;
-  font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 
 body {
@@ -28,16 +27,25 @@ body {
 }
 
 header {
-  padding: 140px 20px 20px 20px;
+  padding: 10vh 20px 20px;
   background-color: var(--color-primary);
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
+svg circle {
+  fill: var(--color-primary);
+}
+
+svg path {
+  fill: var(--color-secondary);
+}
+
 main {
+  height: 80vh;
   background-color: var(--bg-color-primary);
   color: var(--bg-color-secondary);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 24px;
 }
 
@@ -51,17 +59,18 @@ a {
 }
 
 footer {
+  height: 10vh;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding-top: 0;
   color: var(--color-secondary);
-  font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
   text-align: center;
 }
-
 
 /* CLASSES */
 .more-to-come {
@@ -69,7 +78,7 @@ footer {
   left: 0;
   top: 80px;
   transform: rotate(-45deg);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .logo {
@@ -78,15 +87,15 @@ footer {
 
 .title {
   margin-bottom: 20px;
-  font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
   font-size: 70px;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
 
-.sub-title {  
+.sub-title {
   margin-bottom: 20px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 24px;
   text-align: center;
 }
@@ -98,7 +107,7 @@ footer {
   align-items: center;
   width: 450px;
   padding: 4px 4px 0px 4px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .social-icons {
@@ -107,6 +116,7 @@ footer {
   padding-top: 20px;
   margin-bottom: 40px;
   font-size: 28px;
+  text-decoration: none;
 }
 
 .social-icons a,
@@ -145,7 +155,7 @@ footer {
 .quote-icon {
   position: absolute;
   font-size: 24px;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .quote-left {
@@ -167,7 +177,7 @@ footer {
 }
 
 .call-to-action {
-  font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -190,10 +200,9 @@ footer {
 
 .signature {
   margin-top: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 18px;
 }
-
 
 /* BREAK POINTS */
 @media screen and (max-width: 1200px) {
