@@ -1,7 +1,6 @@
 # My Personal Website
 
-> _A place where I can showcase my side projects, blog posts, motivational snippets, etc._
-> [Check it out!](http://anthonyjsilva.com)
+> _A place where I can showcase my side projects, blog posts, motivational snippets, etc._ > [Check it out!](http://anthonyjsilva.com)
 
 ### Technologies Used
 

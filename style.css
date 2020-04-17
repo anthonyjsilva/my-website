@@ -7,6 +7,8 @@
   --bg-color-primary: #3a3a3a;
 
   --bg-color-secondary: lightgray;
+
+  --border-radius: 8px;
 }
 
 /* TAGS */
@@ -14,23 +16,23 @@ html {
   height: 100%;
   box-sizing: border-box;
   font-family: "Viga", sans-serif;
+  font-size: 16px;
 }
 
 body {
   position: relative;
-  min-height: 100%;
-  padding-bottom: 160px;
+  padding-bottom: 10vh;
   margin: 0;
-  text-align: center;
   background-color: var(--bg-color-primary);
+  text-align: center;
   color: var(--color-secondary);
 }
 
 header {
-  padding: 10vh 20px 20px;
-  background-color: var(--color-primary);
   height: 90vh;
   position: relative;
+  padding: 10vh 20px 20px;
+  background-color: var(--color-primary);
 }
 
 svg circle {
@@ -42,11 +44,13 @@ svg path {
 }
 
 main {
-  height: 80vh;
+  height: 90vh;
   background-color: var(--bg-color-primary);
   color: var(--bg-color-secondary);
   font-family: "Roboto Slab", serif;
   font-size: 24px;
+  display: flex;
+  align-items: center;
 }
 
 p {
@@ -56,6 +60,7 @@ p {
 a {
   color: inherit;
   font-size: 28px;
+  text-decoration: none;
 }
 
 footer {
@@ -64,9 +69,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 30px;
-  /* margin-bottom: 20px; */
-  padding-top: 0;
+  padding-bottom: 30px;
   color: var(--color-secondary);
   font-family: "Viga", sans-serif;
   text-align: center;
@@ -76,117 +79,102 @@ footer {
 .more-to-come {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 60px;
   transform: rotate(-45deg);
   font-family: "Roboto Slab", serif;
 }
 
-.logo {
-  margin-bottom: 45px;
-}
-
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
   font-family: "Viga", sans-serif;
-  font-size: 70px;
+  font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 0.8rem;
 }
 
 .sub-title {
-  margin-bottom: 20px;
+  margin-bottom: 0.8rem;
   font-family: "Roboto Slab", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .social-media {
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 450px;
-  padding: 4px 4px 0px 4px;
-  margin: 0 auto;
 }
 
-.social-icons {
+.social-icon {
   display: flex;
-  justify-content: flex-start;
-  padding-top: 20px;
-  margin-bottom: 40px;
-  font-size: 28px;
-  text-decoration: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
 
-.social-icons a,
-.social-icons:hover,
-.social-icons:focus {
-  text-decoration: none;
-}
-
-.social-icons:hover {
+.social-icon a,
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
   color: var(--bg-color-primary);
 }
 
-.social-icons:focus,
-.social-icons:active {
-  color: var(--color-secondary);
-}
-
-.more {
+.more-icon {
   position: absolute;
   bottom: 40px;
   left: 50vw;
-  font-size: 26px;
-}
-
-.more a {
-  text-decoration: none;
 }
 
 .content {
   position: relative;
-  max-width: 600px;
-  padding: 20px;
-  margin: 40px auto;
+  max-width: 40%;
+  padding: 2rem;
+  margin: auto;
+  background: #4e4e4e;
+  border-radius: var(--border-radius);
 }
 
 .quote-icon {
   position: absolute;
-  font-size: 24px;
-  opacity: 0.4;
+  font-size: 3rem;
+  opacity: 40%;
 }
 
 .quote-left {
-  left: -45px;
+  left: -6rem;
 }
 
 .quote-right {
-  right: -45px;
+  right: -6rem;
 }
 
 .who-am-i {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
 }
 
 .bio {
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 .call-to-action {
   font-family: "Viga", sans-serif;
-  font-size: 30px;
+  font-size: 1.7rem;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--color-secondary);
 }
 
 .how-i-built-this {
   text-decoration: underline;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .how-i-built-this:hover {
@@ -199,16 +187,20 @@ footer {
 }
 
 .signature {
-  margin-top: 10px;
+  margin-top: 0.5rem;
   font-family: "Roboto Slab", serif;
-  font-size: 18px;
+  font-size: 0.8rem;
 }
 
 /* BREAK POINTS */
 @media screen and (max-width: 1200px) {
-  /* TODO */
+  html {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  /* TODO */
+  html {
+    font-size: 24px;
+  }
 }
