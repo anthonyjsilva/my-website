@@ -76,12 +76,13 @@ footer {
 }
 
 /* CLASSES */
-.more-to-come {
+.banner {
   position: absolute;
-  left: 0;
-  top: 60px;
+  left: -1rem;
+  top: 8rem;
   transform: rotate(-45deg);
   font-family: "Roboto Slab", serif;
+  font-size: 1rem;
 }
 
 .title {
@@ -92,14 +93,14 @@ footer {
   letter-spacing: 0.8rem;
 }
 
-.sub-title {
+.subtitle {
   margin-bottom: 0.8rem;
   font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.social-media {
+.social-media-container {
   width: fit-content;
   margin: 0 auto;
   display: flex;
@@ -114,7 +115,6 @@ footer {
   font-size: 1.5rem;
 }
 
-.social-icon a,
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--color-secondary);
@@ -126,6 +126,8 @@ footer {
   position: absolute;
   bottom: 40px;
   left: 50vw;
+  transform: translateX(-50%);
+  background: none;
 }
 
 .content {
@@ -152,8 +154,9 @@ footer {
 }
 
 .who-am-i {
+  font-family: "Viga", sans-serif;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: var(--color-secondary);
 }
 
@@ -195,12 +198,30 @@ footer {
 /* BREAK POINTS */
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 800px) {
   html {
-    font-size: 24px;
+    font-size: 10px;
+  }
+  .social-media {
+    margin-top: 2rem;
+  }
+  .social-icon,
+  .more-icon {
+    font-size: 3rem;
+  }
+  .content {
+    max-width: 80%;
+  }
+  .quote-left {
+    left: 1rem;
+    top: -1rem;
+  }
+  .quote-right {
+    right: 1rem;
+    top: -1rem;
   }
 }

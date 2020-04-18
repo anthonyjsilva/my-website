@@ -6,12 +6,12 @@
 
 - HTML
 - CSS
-- Google Fonts
-- Font Awesome 5 (for icons)
-- [game-icons.net](https://game-icons.net/) (for favicon and logo)
-- [simpleicons.org](https://simpleicons.org/) (for free SVG icons of popular brands)
-- [glyphter.com](https://glyphter.com/) (for creating a custom icon font)
-- [surge.sh](https://surge.sh/) (for static hosting)
+- [fonts.google.com](https://fonts.google.com/) - fonts
+- [fontawesome.com](https://fontawesome.com/) - icon fonts
+- [game-icons.net](https://game-icons.net/) - favicon and logo
+- [simpleicons.org](https://simpleicons.org/) - free SVG icons of popular brands
+- [glyphter.com](https://glyphter.com/) - creating a custom icon font
+- [surge.sh](https://surge.sh/) - static hosting
 
 ### Screenshots of site's progression
 
