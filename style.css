@@ -154,6 +154,7 @@ footer {
 }
 
 .who-am-i {
+  text-align: left;
   font-family: "Viga", sans-serif;
   margin-bottom: 1rem;
   font-size: 1.8rem;
@@ -161,8 +162,13 @@ footer {
 }
 
 .bio {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.bio::first-letter {
+  color: white;
 }
 
 .call-to-action {
