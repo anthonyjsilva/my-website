@@ -4,6 +4,10 @@
 
   --color-secondary: #fafafa;
 
+  --color-accent: #0b4c73;
+
+  --color-text: #4e4e4e;
+
   --bg-color-primary: #3a3a3a;
 
   --bg-color-secondary: lightgray;
@@ -23,16 +27,21 @@ body {
   position: relative;
   padding-bottom: 10vh;
   margin: 0;
-  background-color: var(--bg-color-primary);
   text-align: center;
+  background-color: var(--bg-color-primary);
   color: var(--color-secondary);
 }
 
 header {
-  height: 90vh;
   position: relative;
+  height: 90vh;
   padding: 10vh 20px 20px;
   background-color: var(--color-primary);
+}
+
+svg {
+  height: 250px;
+  animation: crescendo 2.5s alternate infinite ease-in;
 }
 
 svg circle {
@@ -43,14 +52,23 @@ svg path {
   fill: var(--color-secondary);
 }
 
+@keyframes crescendo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 main {
+  display: flex;
+  align-items: center;
   height: 90vh;
   background-color: var(--bg-color-primary);
   color: var(--bg-color-secondary);
   font-family: "Roboto Slab", serif;
   font-size: 24px;
-  display: flex;
-  align-items: center;
 }
 
 p {
@@ -100,6 +118,10 @@ footer {
   text-align: center;
 }
 
+.subtitle--accent {
+  color: var(--bg-color-primary);
+}
+
 .social-media-container {
   width: fit-content;
   margin: 0 auto;
@@ -112,7 +134,7 @@ footer {
   display: flex;
   padding: 0.5rem;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .social-icon:hover,
@@ -135,7 +157,7 @@ footer {
   max-width: 40%;
   padding: 2rem;
   margin: auto;
-  background: #4e4e4e;
+  background: var(--color-text);
   border-radius: var(--border-radius);
 }
 
@@ -154,7 +176,6 @@ footer {
 }
 
 .who-am-i {
-  text-align: left;
   font-family: "Viga", sans-serif;
   margin-bottom: 1rem;
   font-size: 1.8rem;
@@ -162,13 +183,13 @@ footer {
 }
 
 .bio {
-  text-align: left;
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
 }
 
 .bio::first-letter {
-  color: white;
+  color: var(--color-secondary);
+  font-size: 1.8rem;
 }
 
 .call-to-action {
@@ -202,32 +223,27 @@ footer {
 }
 
 /* BREAK POINTS */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
-}
 
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 10px;
-  }
-  .social-media {
-    margin-top: 2rem;
-  }
   .social-icon,
   .more-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+
   .content {
-    max-width: 80%;
+    max-width: 75%;
   }
+
   .quote-left {
     left: 1rem;
-    top: -1rem;
+    top: -2rem;
   }
+
   .quote-right {
     right: 1rem;
-    top: -1rem;
+    top: -2rem;
   }
 }
